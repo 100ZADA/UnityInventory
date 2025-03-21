@@ -1252,7 +1252,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ae9aebd9270cefa4b87f6d728e348fba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inventoryPanel: {fileID: 333900024}
+  inventoryBackBtn: {fileID: 2092221120}
 --- !u!1001 &358275429
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3101,7 +3101,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a3bdb40c9bf83c45830bf25a1ab2966, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  uiMainMenuPanel: {fileID: 1092118061}
+  statButton: {fileID: 1173875834}
+  inventoryButton: {fileID: 567106851}
 --- !u!1001 &1125866926
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4290,7 +4291,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 65598519fd9cc5b43b05d85ef9df030b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  statPanel: {fileID: 1545690121}
+  statBackBtn: {fileID: 2010804133}
 --- !u!1 &1588929315
 GameObject:
   m_ObjectHideFlags: 0
