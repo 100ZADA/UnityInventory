@@ -5,19 +5,19 @@ using UnityEngine;
 [System.Serializable]
 public class Character
 {
-    public string name;
-    public int health;
-    public int attack;
-    public int speed;
-    public int coin;
+    public string Name { get; private set; }
+    public int Health {get; private set;}
+    public int Attack {get; private set;}
+    public int Speed {get; private set;}
+    public int Coin {get; private set;}
 
     // 생성자
     public Character(string name, int health, int attack, int speed, int coin)
     {
-        this.name = name;
-        this.health = health;
-        this.attack = attack;
-        this.speed = speed;
-        this.coin = coin;
+        this.Name = name;
+        this.Health = health;
+        this.Attack = attack;
+        this.Speed = speed;
+        this.Coin = coin;
     }
 }

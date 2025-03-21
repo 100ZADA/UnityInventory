@@ -10,7 +10,6 @@ public class GameManager : MonoBehaviour
     public static GameManager instance;
     public Character Character;
     
-    
     private void Awake()
     {
         if (instance == null)

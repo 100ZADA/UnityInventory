@@ -8,7 +8,9 @@ public class UIMainMenu : MonoBehaviour
 {
     public Button statButton;
     public Button inventoryButton;
-
+    
+    // chracter 정보 세팅 메서드 추가 보간 문자열 활용
+    
     private void Start()
     {
         statButton.onClick.AddListener(OpenStatMenu);
@@ -25,5 +27,10 @@ public class UIMainMenu : MonoBehaviour
     {
         UIManager.instance.UIMainMenuPanel.gameObject.SetActive(false);
         UIManager.instance.UIInventory.gameObject.SetActive(true);
+    }
+
+    public void PlayerName()
+    {
+        
     }
 }

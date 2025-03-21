@@ -20,10 +20,10 @@ public class PlayerData : MonoBehaviour
 
     public void Refresh(Character character)
     {
-        name.text = character.name;
-        health.text = character.health.ToString();
-        attack.text = character.attack.ToString();
-        speed.text = character.speed.ToString();
-        coin.text = character.coin.ToString();
+        name.text = character.Name;
+        health.text = character.Health.ToString();
+        attack.text = character.Attack.ToString();
+        speed.text = character.Speed.ToString();
+        coin.text = character.Coin.ToString();
     }
 }

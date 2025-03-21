@@ -8,6 +8,8 @@ public class UIStat : MonoBehaviour
 {
     public Button statBackBtn;
 
+    // chracter 정보 세팅 메서드 추가
+    
     void Start()
     {
         statBackBtn.onClick.AddListener(CloseStatMenu);
