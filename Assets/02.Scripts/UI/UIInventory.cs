@@ -15,7 +15,7 @@ public class UIInventory : MonoBehaviour
 
     public void CloseInventoryMenu()
     {
-        UIManager.instance.UIMainMenuPanel.gameObject.SetActive(true);
+        UIManager.instance.UIMainMenu.gameObject.SetActive(true);
         UIManager.instance.UIInventory.gameObject.SetActive(false);
     }
 }

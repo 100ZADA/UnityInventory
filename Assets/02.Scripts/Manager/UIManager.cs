@@ -11,17 +11,20 @@ public class UIManager : MonoBehaviour
     [SerializeField] private UIMainMenu uiMainMenu;
     [SerializeField] private UIStat uiStat;
     [SerializeField] private UIInventory uiInventory;
-    
+
     // 프로퍼티
-    public UIMainMenu UIMainMenuPanel { get => uiMainMenu; set => uiMainMenu = value; }
-    public UIStat UIStat { get => uiStat; set => uiStat = value; }
-    public UIInventory UIInventory { get => uiInventory; set => uiInventory = value; }
+    public UIMainMenu UIMainMenu { get; set; }
+    public UIStat UIStat { get; set; }
+    public UIInventory UIInventory { get; set; }
 
     private void Awake()
     {
         if (instance == null)
         {
             instance = this;
+            UIMainMenu = uiMainMenu;
+            UIStat = uiStat;
+            UIInventory = uiInventory;
         }
         else
         {
