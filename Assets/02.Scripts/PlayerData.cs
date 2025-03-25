@@ -14,7 +14,7 @@ public class PlayerData : MonoBehaviour
     
     void Start()
     {
-        Refresh(GameManager.instance.character);
+        Refresh(GameManager.instance.Character);
     }
 
     public void Refresh(Character character)

@@ -6,8 +6,10 @@ using UnityEngine;
 public class GameManager : MonoBehaviour
 {
     public static GameManager instance;
-    public Character character { get; private set; }
-
+    public UIInventory uiInventory;
+    
+    public Character Character { get; private set; }
+    
     private void Awake()
     {
         if (instance == null)
@@ -16,7 +18,7 @@ public class GameManager : MonoBehaviour
         }
         else
         {
-            Destroy(this.gameObject);
+            Destroy(gameObject);
         }
         
         SetData();
@@ -24,6 +26,13 @@ public class GameManager : MonoBehaviour
 
     private void SetData()
     {
-        character = new Character("초보자", 100, 10, 5, 1000);
+        Character = new Character("초보자", 100, 10, 5, 1000);
+        
+        // 아이템 추가
+        Character.AddItem(new Item("삽", 3));
+        Character.AddItem(new Item("갈퀴", 9));
+        Character.AddItem(new Item("낫", 15));
+        
+        uiInventory.RefreshSlots();
     }
 }
