@@ -6,16 +6,17 @@ using UnityEngine;
 // 아이템 클래스
 public class Item
 {
-    public Sprite icon;
+    public Sprite Icon;
     public string ItemName { get; private set; }
     public int ItemAttack { get; private set; }
     public bool isEquipped { get; private set; }
 
     // 생성자
-    public Item(string itemName, int itemAttack)
+    public Item(string itemName, int itemAttack, Sprite itemIcon)
     {
         ItemName = itemName;
         ItemAttack = itemAttack;
+        Icon = itemIcon;
         isEquipped = false;
     }
 

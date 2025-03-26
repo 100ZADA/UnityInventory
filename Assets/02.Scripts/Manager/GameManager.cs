@@ -20,7 +20,7 @@ public class GameManager : MonoBehaviour
         {
             Destroy(gameObject);
         }
-        
+        Application.targetFrameRate = 60;
         SetData();
     }
 
@@ -29,9 +29,9 @@ public class GameManager : MonoBehaviour
         Character = new Character("초보자", 100, 10, 5, 1000);
         
         // 아이템 추가
-        Character.AddItem(new Item("삽", 3));
-        Character.AddItem(new Item("갈퀴", 9));
-        Character.AddItem(new Item("낫", 15));
+        Character.AddItem(new Item("삽", 3, Resources.Load<Sprite>("Sprites/UI/Select_0")));
+        Character.AddItem(new Item("갈퀴", 9, Resources.Load<Sprite>("Sprites/UI/Select_1")));
+        Character.AddItem(new Item("낫", 15, Resources.Load<Sprite>("Sprites/UI/Select_2")));
         
         uiInventory.RefreshSlots();
     }
